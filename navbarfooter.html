@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>navbarfooter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="navbarfooter.css">
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg  navbar-dark"  style="background-color:rgba(13, 52, 81, 1);">
+  <a class="navbar-brand companyBrand" href="#">
+    <img src="{% static 'images/TL Logo.png'%}" width="30" height="20" class="d-inline-block align-top"
+    alt="logo">
+- Tutorlabs
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item item">
+        <a class="nav-link link" href="#">
+            HOME
+        </a>
+    </li>
+    <li class="nav-item item">
+        <a class="nav-link link" href="#">CLASSES</a>
+    </li>
+    <li class="nav-item item">
+        <a class="nav-link link" href="#">MY TUTOR</a>
+    </li>
+    <li class="nav-item item">
+        <a class="nav-link link" href="#">REPORTS</a>
+    </li>
+    <li class="nav-item item">
+        <a class="nav-link link" href="#">MESSAGES</a>
+    </li>
+    <li class="nav-item item">
+        <a class="nav-link link" href="#">
+            <img class="header__notification-icon-img" src="{% static 'images/notification-icon.svg' %}"
+                alt="" />
+        </a>
+    </li>
+    <li class="nav-item item dropdown">
+        <a class="nav-link link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img class="header__notification-icon-img dropbtn"
+                src="{% static 'images/generic-avatar.png' % }" width="30" height="27" alt="" />
+        </a>
+        <div class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdownMenuLink">
+            <!-- {% if request.user.is_authenticated %} -->
+            <a class="dropdown-item" href="#">View Profile</a>
+            <a class="dropdown-item" href="#">Edit Profile</a>
+            <a class="dropdown-item" href="#">See Public View</a>
+            <a class="dropdown-item" href="#">Change Password</a>
+            <!-- {% endif %} -->
+            <a class="dropdown-item" href="#">Contact</a>
+            <a class="dropdown-item" href="#">Log Out</a>
+        </div>
+    </li>
+    </ul>
+  </div>  
+</nav>
+<!-- navbar end -->
+
+<!-- footer start -->
+<div class="footer">
+    <ul>
+        <li>Terms and Conditions</li>
+        <li>|</li>
+        <li>Privacy Policy</li>
+        <li>|</li>
+        <li>Help</li>
+        <li>|</li>
+        <li>Tutor Labs Licenses</li>
+        <li>|</li>
+        <li>Partners</li>
+        <li>|</li>
+        <li class="flex ">
+            <label for="Lang ">Language<b> English</b></label>
+        </li>
+    </ul>
+</div>
+<!-- footer end -->
+
+
+</body>
+</html>
+
